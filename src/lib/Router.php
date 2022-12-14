@@ -57,7 +57,7 @@ class Router
         $params = [];
 
         for ($i = 1; $i < count($variables); $i++) {
-            array_push($params, $variables[$i]);
+            $params[] = $variables[$i];
         }
 
         $this->params = $params;
